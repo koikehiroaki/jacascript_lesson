@@ -31,13 +31,19 @@ if (!(num3 % 2 === 0)) {　
 
 var result = '';
 if (num3 % 2 !== 0) {
+    //出力
     console.log(num3, '奇数です')
+    //変数　
     result = '奇数です';
 } else if (num3 === 0) {
+    //出力
     console.log(num3, '０です')
+    //変数
     result = '０です';
 } else {
+    //出力
     console.log(num3, '偶数です');
+    //変数
     result = '偶数です';
 }
 
