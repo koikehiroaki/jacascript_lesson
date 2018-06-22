@@ -1,0 +1,15 @@
+html {
+    height: 3000px;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    background: red;
+    border-radius: 50px;
+    opacity: 0.5;
+}
