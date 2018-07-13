@@ -76,20 +76,3 @@ console.log(colors)
 var colors2 = {}
 colors2.red = '赤'
 console.log(colors2)
-
-// Q1
-for (var i = 1; i <= 100; i++) {
-    if (i % 2 === 0) {
-        console.log(i)
-    }
-
-}
-
-// Q2
-for (var a = 0; a <= 100; a++) {
-    if (a >= 10 && a <= 30) {
-        console.log(a)
-    } else if (a >= 70 && a <= 90) {
-        console.log(a)
-    }
-}
