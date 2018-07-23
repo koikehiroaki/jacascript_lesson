@@ -42,7 +42,9 @@ console.log(fruits)
 //配列を取り出す
 var animal = ['猫', '犬', 'うさぎ', 'ハムスター', 'ふくろう', 'トラ']
 console.log(animal.slice(1, 3))　　 // １から３番目まで（３番目は含まない）
+
 //配列の後ろから２つ取ってくる
+//4から６番目まで（６番目は含まない）
 console.log(animal.slice(animal.length - 2, animal.length))
 
 //並び替え
