@@ -30,17 +30,18 @@ console.log(orange[1])
 
 //object
 
-//配列あり
+//配列あり   連想配列と多次元配列を使って整理
 var fruits3 = {
     red: ['りんご', 'さくらんぼ', 'いちご'],
     orange: ['かき', 'みかん', 'びわ'],
     yellow: ['バナナ', 'パイナップル', 'レモン']
 }
 
+
 console.log(fruits3.yellow)
 console.log(fruits3['yellow'][1])
 
-//配列なし
+//配列なし   連想配列
 var fruits4 = {
     red: 'りんご',
     orange: 'みかん',
@@ -51,10 +52,13 @@ var fruits4 = {
 console.log(fruits4.red)
 console.log(fruits4['red'])
 
-
 // var fruits3のorangeを取り出す
+//上記の２つの例の２つ目の[]がついている方は下のように先に変数を作れるという利点がある
 var color = 'orange'
 console.log(fruits3[color])
+
+
+
 
 //配列の長さを取ってくる objectはダメ
 console.log(fruits.length)
@@ -76,3 +80,6 @@ console.log(colors)
 var colors2 = {}
 colors2.red = '赤'
 console.log(colors2)
+
+
+
