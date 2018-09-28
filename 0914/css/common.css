@@ -4,12 +4,24 @@ html {
 
 
 .box {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    position: relative;
+
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.box2 {
     width: 100px;
     height: 100px;
-    position: fixed;
-    top: 100px;
-    left: 10px;
-    background: red;
-    border-radius: 50px;
-    opacity: 0.5;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
 }
