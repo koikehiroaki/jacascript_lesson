@@ -70,7 +70,7 @@ console.log(addFruit(fruits, 'すいか'))
 //Q3
 console.log('Q3')
 
-function randomNum(num) {
-    (Math.floor(Math.random() * num) + 1)
-
+function randomNum1(num) {
+    return Math.floor(Math.random() * num)
 }
+console.log(randomNum1(10))
