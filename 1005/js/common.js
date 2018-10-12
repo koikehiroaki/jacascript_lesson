@@ -59,18 +59,64 @@ console.log(numObj(100))
 //Q2
 console.log('Q2')
 
+//var fruits = ['りんご', 'めろん', 'ぶどう'];
+//
+//function addFruit(fruits, fruit) {
+//    fruits.push(fruit)
+//    return fruits
+//}
+//console.log(addFruit(fruits, 'すいか'))
+
+
+
 var fruits = ['りんご', 'めろん', 'ぶどう'];
 
-function addFruit(fruits, fruit) {
-    fruits.push(fruit)
-    return fruits
+function addFruit(ggg, fruit) {
+    ggg.push(fruit)
+    return ggg
 }
 console.log(addFruit(fruits, 'すいか'))
+
 
 //Q3
 console.log('Q3')
 
 function randomNum1(num) {
-    return Math.floor(Math.random() * num)
+    //1~10
+    return Math.floor(Math.random() * num + 1)
+    //0~10
+    //return Math.floor(Math.random() * (num + 1))
+
+    //Math.random()はMath.floorをしてもブラウザの表示は小数点が切れるが実際のMath.random()は小数点は切れない
 }
 console.log(randomNum1(10))
+
+//Q4
+console.log('Q4')
+
+function randomRangeNum(numA, numB) {
+    var randomNum1 = Math.floor(Math.random() * (numB - numA + 1) + numA)
+    //Math.random()はMath.floorをしてもブラウザの表示は小数点が切れるが実際のMath.random()の小数点は切れない
+    //計算は () => かけ算 => 通常 の順番で計算するので Math.random() * (numB - numA + 1) を先に計算する
+    return randomNum1
+}
+console.log(randomRangeNum(3, 10))
+
+
+//Q5
+console.log('Q5')
+
+function text(mozi) {
+    if (mozi.length <= 4) {
+        return mozi
+    } else {
+        return mozi.slice(0, 4) + '...'
+    }
+}
+
+console.log(text('0123456789'))
+console.log(text('0123'))
+console.log(text('01'))
+
+//Q6
+console.log('Q6')
