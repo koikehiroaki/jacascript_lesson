@@ -120,3 +120,19 @@ console.log(text('01'))
 
 //Q6
 console.log('Q6')
+
+function getMoneyFormat(numX) {
+    var str = String(numX)
+    var newString = ''
+    for (var i = str.length - 1, j = 1; i >= 0; i--, j++) {
+        console.log(i, j)
+        if (j % 3 === 0 && j !== str.length) {
+            newString = ',' + str[i] + newString
+        } else {
+            newString = str[i] + newString
+        }
+    }
+    return newString
+}
+
+console.log(getMoneyFormat(12345678))
