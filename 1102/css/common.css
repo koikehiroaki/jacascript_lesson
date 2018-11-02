@@ -1,0 +1,72 @@
+main {
+    margin: 0 auto;
+    width: 1000px;
+    font-size: 30px;
+}
+
+.tabcontrol {
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.prev {
+    float: left;
+    background: #000000;
+    color: white;
+    width: 100px;
+}
+
+.next {
+    float: right;
+    background: #000000;
+    color: white;
+    width: 100px;
+}
+
+.tabMenu {
+    overflow: hidden;
+    list-style: none;
+    width: 1000px;
+}
+
+.tabMenuItem:last-child {
+    border-right: none;
+}
+
+.tabMenuItem {
+    float: left;
+    background: #000000;
+    color: white;
+    width: 250px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    border-right: 2px solid white;
+    box-sizing: border-box;
+}
+
+.tabMenuItem:hover {
+    text-decoration: none;
+    background: #777777;
+}
+
+.tabContents {
+    margin-top: 50px;
+}
+
+
+.tabItem {
+    background: #aaa;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 20px
+}
