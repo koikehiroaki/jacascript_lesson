@@ -1,7 +1,6 @@
 main {
     margin: 0 auto;
     width: 1000px;
-    font-size: 30px;
 }
 
 .tabcontrol {
@@ -9,6 +8,7 @@ main {
     overflow: hidden;
     margin-bottom: 20px;
     text-align: center;
+    font-size: 17px;
 }
 
 .prev {
@@ -16,6 +16,7 @@ main {
     background: #000000;
     color: white;
     width: 100px;
+    padding: 10px 0px;
 }
 
 .next {
@@ -23,12 +24,35 @@ main {
     background: #000000;
     color: white;
     width: 100px;
+    padding: 10px 0px;
+}
+
+.prev:hover {
+    background: #ccc;
+    opacity: 0.8;
+    color: black;
+    text-decoration: none;
+}
+
+.next:hover {
+    background: #ccc;
+    opacity: 0.8;
+    color: black;
+    text-decoration: none;
+}
+
+.tabMenuItem:hover {
+    background: #ccc;
+    text-decoration: none;
+    opacity: 0.8;
+    color: black;
 }
 
 .tabMenu {
     overflow: hidden;
     list-style: none;
     width: 1000px;
+    font-size: 25px;
 }
 
 .tabMenuItem:last-child {
@@ -47,20 +71,26 @@ main {
     box-sizing: border-box;
 }
 
-.tabMenuItem:hover {
-    text-decoration: none;
-    background: #777777;
+.tabMenuItem.on {
+    background: #ccc;
+    color: black;
+}
+
+.tabItem {
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 20px;
+    background: #ccc;
+    display: none;
+}
+
+.tabItem.on {
+    background: #ccc;
+    display: block;
 }
 
 .tabContents {
     margin-top: 50px;
-}
-
-
-.tabItem {
-    background: #aaa;
-    margin-bottom: 30px;
-    padding: 20px;
 }
 
 h1 {
